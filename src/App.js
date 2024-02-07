@@ -1,25 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import HomeScreen from './screens/HomeScreen';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  return <HomeScreen />;
+};
+
+// I have used icons from ant-design to make the application as close to the demo as possible.
+// I have not used any Components from antd library except for the icons. The application has
+// been built with custsom CSS only.
 
 export default App;
