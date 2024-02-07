@@ -27,8 +27,9 @@ const HomeScreen = () => {
     } else {
       // replacing the old profile with the new one.
       const newProfile = { id, name, email, phone, website };
-      let newProfiles = [...profiles];
-      newProfiles[id] = newProfile;
+      let newProfiles = profiles;
+      const index = newProfiles.findIndex((profile) => profile.id === id);
+      newProfiles[index] = newProfile;
       setProfiles(newProfiles);
       setModalOpen(false);
     }
